@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - INFINITY</title>
+
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="cart-header">
+            <a href="main.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <h2>Meu Carrinho</h2>
+
+            <img src="img/logo.png" alt="Infinity">
+        </header>
+
+        <section id="cart-items" class="cart-items"></section>
+
+        <section class="cart-summary">
+            <div>
+                <span>Total</span>
+                <strong id="total-price">R$ 0,00</strong>
+            </div>
+
+            <button class="checkout-btn">
+                Finalizar Pedido
+            </button>
+        </section>
+
+    </div>
+
+    <script src="carrinho.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>

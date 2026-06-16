@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - INFINITY</title>
+
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="topo">
+            <img src="img/logo.png" class="logo">
+
+            <div class="bell">
+                <i class="fa-regular fa-bell"></i>
+                <span>2</span>
+            </div>
+        </header>
+
+        <section class="user-area">
+            <div class="avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="user-info">
+                <h2 id="user-name">Brunno Silva</h2>
+                <p id="user-email">brunno@email.com</p>
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+        </section>
+
+        <section class="order-card">
+            <div class="order-left">
+                <i class="fa-solid fa-box-open"></i>
+
+                <div>
+                    <h3>Meus pedidos</h3>
+                    <p>Acompanhe seus pedidos</p>
+                </div>
+            </div>
+
+            <div class="order-right">
+                <span>Ver todos</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+
+        <section class="menu-list">
+
+            <div class="menu-item">
+                <i class="fa-regular fa-user"></i>
+                <span>Minha conta</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Endereços</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-regular fa-credit-card"></i>
+                <span>Formas de pagamento</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-regular fa-heart"></i>
+                <span>Lista de desejos</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-tag"></i>
+                <span>Cupons</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Privacidade</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-regular fa-circle-question"></i>
+                <span>Ajuda e suporte</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Configurações</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="menu-item dark-mode-item">
+                <i class="fa-solid fa-moon"></i>
+                <span>Modo noturno</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+        </section>
+
+        <button class="logout-btn" id="logoutBtn">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Sair da conta
+        </button>
+
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="main.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Início</span>
+        </a>
+
+        <a href="main.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Buscar</span>
+        </a>
+
+        <a href="carrinho.html" class="cart-link">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-bottom">0</span>
+            <small>Carrinho</small>
+        </a>
+
+        <a href="perfil.html" class="active">
+            <i class="fa-solid fa-user"></i>
+            <span>Perfil</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-gear"></i>
+            <span>Configurações</span>
+        </a>
+    </nav>
+
+    <script src="perfil.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>

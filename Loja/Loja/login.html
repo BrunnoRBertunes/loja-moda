@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - INFINITY</title>
+    <link rel="stylesheet" href="login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Infinity">
+        </div>
+
+        <div class="welcome">
+            <h2>Bem-vindo de volta!</h2>
+            <p>Faça login para continuar comprando.</p>
+        </div>
+
+        <div class="banner">
+            <img src="img/modelo-de-roupa.png" alt="Produtos Infinity">
+        </div>
+
+        <form class="login-form" id="loginForm">
+
+            <div class="input-box">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="E-mail">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Senha">
+                <i class="fa-regular fa-eye eye"></i>
+            </div>
+
+            <a href="#" class="forgot">Esqueceu sua senha?</a>
+
+            <button type="submit" class="btn-login">
+                Entrar
+            </button>
+            <div id="login-message"></div>
+        </form>
+
+        <div class="divider">
+            <span>ou</span>
+        </div>
+
+        <button class="social-btn">
+            <img src="img/google.png">
+            Continuar com Google
+        </button>
+
+        <button class="social-btn">
+            <img src="img/apple.png">
+            Continuar com Apple
+        </button>
+
+        <p class="register"> Não tem uma conta? <a href="#">Criar conta</a> </p>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>
