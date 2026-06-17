@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFINITY</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <div class="container">
+
+        <header>
+
+            <img src="img/logo.png" class="logo" alt="Infinite">
+
+            <div class="welcome-user">
+                <h2 id="welcome-user"></h2>
+                <p>O que deseja comprar hoje?</p>
+            </div>
+
+            <div class="search-area">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    <label for="search-products" class="sr-only">Pesquisar produtos</label>
+                    <input id="search-products" type="search" placeholder="Pesquisar produtos" autocomplete="off">
+                    <span id="search-status" class="sr-only" aria-live="polite"></span>
+                </div>
+
+                <div class="icons">
+
+                    <button class="cart-top icon-button" type="button" aria-label="Abrir carrinho com 0 itens">
+                        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                        <span class="cart-count" aria-hidden="true">0</span>
+                    </button>
+
+                    <button class="icon-button" type="button" aria-label="Abrir notificações">
+                        <i class="fa-regular fa-bell" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main id="conteudo-principal" tabindex="-1">
+
+        <section class="banner" aria-label="Banner promocional">
+            <div class="slide active">
+                <img src="img/banner1.png" alt="Promoção da loja Infinite">
+            </div>
+        </section>
+
+        <section class="trust-strip" aria-label="Diferenciais da loja">
+            <div>
+                <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+                <span>Frete grátis acima de R$ 199</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                <span>Troca fácil em até 7 dias</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
+                <span>Compra com acessibilidade</span>
+            </div>
+        </section>
+
+        <section class="quick-filters" aria-label="Filtros rápidos">
+            <button class="filter-chip active" type="button" data-filter="todos">Todos</button>
+            <button class="filter-chip" type="button" data-filter="camiseta">Camisetas</button>
+            <button class="filter-chip" type="button" data-filter="moletom">Moletons</button>
+            <button class="filter-chip" type="button" data-filter="calca">Calças</button>
+            <button class="filter-chip" type="button" data-filter="tenis">Tênis</button>
+        </section>
+
+        <section>
+            <div class="section-title">
+                <h2>OFERTAS</h2>
+                <a href="#">Ver todas</a>
+            </div>
+
+            <div class="products">
+
+                <div class="card">
+                    <img src="img/camiseta-azul.png">
+                    <h3>Camiseta Infinity Azul</h3>
+                    <p>R$ 45,99</p>
+                    <span>★ 4,79</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="card">
+                    <img src="img/calca-xadrez.webp">
+                    <h3>Calça Xadrez</h3>
+                    <p>R$ 85,99</p>
+                    <span>★ 4,89</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="card">
+                    <img src="img/moletom-preto.jfif">
+                    <h3>Moletom Infinity</h3>
+                    <p>R$ 129,99</p>
+                    <span>★ 4,95</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="card">
+                    <img src="img/camisa-branca.jfif">
+                    <h3>Camiseta Branca</h3>
+                    <p>R$ 39,99</p>
+                    <span>★ 4,60</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="cat-title">CATEGORIAS</h2>
+
+            <div class="categories">
+                <div class="category">
+                    <i class="fa-solid fa-shirt"></i>
+                    <span>Camisetas</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-socks"></i>
+                    <span>Meias</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-hat-cowboy"></i>
+                    <span>Bonés</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-shoe-prints"></i>
+                    <span>Tênis</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-box"></i>
+                    <span>Outros</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="cat-title">MAIS VENDIDOS</h2>
+
+            <div class="best-sellers">
+
+                <div class="seller-card">
+                    <img src="img/camiseta-azul.png">
+
+                    <div>
+                        <h4>Camiseta Infinity Azul</h4>
+                        <p>R$ 45,99</p>
+                        <span>★ 4,79</span>
+                    </div>
+                </div>
+
+                <div class="seller-card">
+                    <img src="img/calca-xadrez.webp">
+
+                    <div>
+                        <h4>Calça Xadrez</h4>
+                        <p>R$ 85,99</p>
+                        <span>★ 4,89</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="access-showcase" aria-label="Recursos de acessibilidade da loja">
+            <div class="access-copy">
+                <span class="access-kicker">UX inclusiva</span>
+                <h2>Uma loja pensada para mais pessoas</h2>
+                <p>Alto contraste, texto maior, redução de movimento e navegação por teclado deixam a experiência mais confortável.</p>
+            </div>
+
+            <div class="access-badges">
+                <span><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i> Contraste</span>
+                <span><i class="fa-solid fa-text-height" aria-hidden="true"></i> Texto maior</span>
+                <span><i class="fa-solid fa-keyboard" aria-hidden="true"></i> Teclado</span>
+            </div>
+        </section>
+
+        <section class="for-you-section">
+
+            <div class="para-voce-title">
+                <span></span>
+                <h2>Para você</h2>
+                <span></span>
+            </div>
+
+            <div class="for-you-grid">
+
+                <div class="market-card">
+                    <img src="img/camiseta-azul.png">
+                    <span class="discount">-15%</span>
+                    <h3>Camiseta Infinity Azul Premium</h3>
+                    <p class="price">R$ 45,99</p>
+                    <span class="sold">250 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/moletom-preto.jfif">
+                    <span class="discount">-20%</span>
+                    <h3>Moletom Infinity Preto</h3>
+                    <p class="price">R$ 129,99</p>
+                    <span class="sold">89 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/calca-xadrez.webp">
+                    <span class="discount">-12%</span>
+                    <h3>Calça Xadrez Streetwear</h3>
+                    <p class="price">R$ 85,99</p>
+                    <span class="sold">167 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/camisa-branca.jfif">
+                    <span class="discount">-10%</span>
+                    <h3>Camiseta Basic Branca</h3>
+                    <p class="price">R$ 39,99</p>
+                    <span class="sold">321 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/jaqueta-jeans.webp">
+                    <span class="discount">-25%</span>
+                    <h3>Jaqueta Jeans Feminina</h3>
+                    <p class="price">R$ 149,99</p>
+                    <span class="sold">145 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/calça-bege.jfif">
+                    <span class="discount">-18%</span>
+                    <h3>Calça Cargo Bege</h3>
+                    <p class="price">R$ 119,90</p>
+                    <span class="sold">78 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/tenis-infity.png">
+                    <span class="discount">-30%</span>
+                    <h3>Tênis Casual Infinity</h3>
+                    <p class="price">R$ 199,90</p>
+                    <span class="sold">204 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/bone-preto.webp">
+                    <span class="discount">-15%</span>
+                    <h3>Boné Infinity Original</h3>
+                    <p class="price">R$ 49,90</p>
+                    <span class="sold">412 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/camisa-infinity.png">
+                    <span class="discount">-22%</span>
+                    <h3>Camiseta Infinity Black</h3>
+                    <p class="price">R$ 54,99</p>
+                    <span class="sold">281 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/moletom-cinza.webp">
+                    <span class="discount">-17%</span>
+                    <h3>Moletom Cinza Premium</h3>
+                    <p class="price">R$ 139,99</p>
+                    <span class="sold">93 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/shot-esportivo.png">
+                    <span class="discount">-14%</span>
+                    <h3>Shorts Infinity Esportivo</h3>
+                    <p class="price">R$ 59,90</p>
+                    <span class="sold">174 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/jaqueta-infinity.png">
+                    <span class="discount">-35%</span>
+                    <h3>Jaqueta Infinity Urban</h3>
+                    <p class="price">R$ 179,90</p>
+                    <span class="sold">58 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/camisa-verde.png">
+                    <span class="discount">-19%</span>
+                    <h3>Camiseta Infinity Verde</h3>
+                    <p class="price">R$ 52,90</p>
+                    <span class="sold">136 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/calca-cargo-preta.webp">
+                    <span class="discount">-21%</span>
+                    <h3>Calça Cargo Preta</h3>
+                    <p class="price">R$ 124,90</p>
+                    <span class="sold">97 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/moletom-azul.png">
+                    <span class="discount">-16%</span>
+                    <h3>Moletom Infinity Azul</h3>
+                    <p class="price">R$ 134,90</p>
+                    <span class="sold">112 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/jaqueta-branca.png">
+                    <span class="discount">-28%</span>
+                    <h3>Jaqueta Infinity Branca</h3>
+                    <p class="price">R$ 189,90</p>
+                    <span class="sold">64 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/short-azul.webp">
+                    <span class="discount">-13%</span>
+                    <h3>Shorts Esportivo Azul</h3>
+                    <p class="price">R$ 62,90</p>
+                    <span class="sold">88 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/tenis-branco.webp">
+                    <span class="discount">-25%</span>
+                    <h3>Tênis Casual Branco</h3>
+                    <p class="price">R$ 219,90</p>
+                    <span class="sold">154 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/camiseta-listrada.png">
+                    <span class="discount">-18%</span>
+                    <h3>Camiseta Listrada Infinity</h3>
+                    <p class="price">R$ 57,90</p>
+                    <span class="sold">72 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+                <div class="market-card">
+                    <img src="img/moletom-branco.jfif">
+                    <span class="discount">-22%</span>
+                    <h3>Moletom Branco Premium</h3>
+                    <p class="price">R$ 149,90</p>
+                    <span class="sold">101 vendidos</span>
+                    <button class="add-cart"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+
+            </div>
+        </section>
+
+        </main>
+
+    </div>
+
+    <nav class="bottom-nav" aria-label="Navegação principal">
+        <a href="main.html" class="active" aria-label="Início">
+            <i class="fa-solid fa-house" aria-hidden="true"></i>
+            <span class="sr-only">Início</span>
+        </a>
+
+        <a href="#search-products" aria-label="Buscar produtos">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <span class="sr-only">Buscar</span>
+        </a>
+
+        <button class="cart-bottom icon-button" type="button" aria-label="Abrir carrinho com 0 itens">
+            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            <span class="cart-count" aria-hidden="true">0</span>
+        </button>
+
+        <a href="perfil.html" class="profile-link" aria-label="Perfil">
+            <i class="fa-regular fa-user" aria-hidden="true"></i>
+            <span class="sr-only">Perfil</span>
+        </a>
+
+        <a href="perfil.html" aria-label="Configurações">
+            <i class="fa-solid fa-gear" aria-hidden="true"></i>
+            <span class="sr-only">Configurações</span>
+        </a>
+    </nav>
+
+    <div id="toast" role="status" aria-live="polite">Produto adicionado ao carrinho!</div>
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>

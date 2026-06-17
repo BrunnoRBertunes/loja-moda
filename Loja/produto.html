@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - INFINITY</title>
+
+    <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <div class="container">
+
+        <header>
+            <a href="main.html" aria-label="Voltar para a página inicial"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
+            <img src="img/logo.png" class="logo" alt="Infinite">
+            <a href="carrinho.html" class="cart-icon" aria-label="Abrir carrinho">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            </a>
+        </header>
+
+        <main class="product-area" id="conteudo-principal" tabindex="-1">
+
+            <div class="product-image">
+                <img id="produto-img" src="" alt="">
+            </div>
+
+            <div class="product-info">
+                <h1 id="produto-nome"></h1>
+
+                <div class="rating">
+                    <span>★ 4,79</span>
+                    <p>562 avaliações</p>
+                </div>
+
+                <div class="price-area">
+                    <h2 id="produto-preco"></h2>
+                    <span class="old-price">R$ 69,90</span>
+                    <span class="discount">-56%</span>
+                </div>
+
+                <h3 id="sizes-title">Tamanhos:</h3>
+
+                <div class="sizes" role="radiogroup" aria-labelledby="sizes-title">
+                    <button class="size-btn" type="button" role="radio" aria-checked="false">P</button>
+                    <button class="size-btn" type="button" role="radio" aria-checked="false">M</button>
+                    <button class="size-btn" type="button" role="radio" aria-checked="false">G</button>
+                    <button class="size-btn" type="button" role="radio" aria-checked="false">GG</button>
+                </div>
+
+                <button id="addProductCart" class="add-cart-btn">
+                    <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                    Adicionar ao carrinho
+                </button>
+            </div>
+
+        </main>
+
+        <section class="description">
+            <h3>Descrição</h3>
+            <p id="produto-desc">
+                Produto Infinity feito com material premium, ideal para o dia a dia.
+                Conforto, estilo e acabamento moderno.
+            </p>
+        </section>
+
+        <section class="product-highlights" aria-label="Detalhes do produto">
+            <div>
+                <i class="fa-solid fa-shirt" aria-hidden="true"></i>
+                <strong>Material premium</strong>
+                <span>Toque macio e acabamento reforçado</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>
+                <strong>Guia de tamanho</strong>
+                <span>Escolha P, M, G ou GG antes de comprar</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+                <strong>Compra segura</strong>
+                <span>Checkout simples com revisão do pedido</span>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div>
+                <i class="fa-solid fa-truck"></i>
+                <p><strong>Frete grátis</strong><br>Para compras acima de R$ 199,00</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-rotate-left"></i>
+                <p><strong>Devolução grátis</strong><br>Até 7 dias após o recebimento</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h3>Produtos relacionados</h3>
+
+            <div class="related-grid">
+
+                <div class="related-card">
+                    <img src="img/camisa-infinity.png">
+                    <h4>Camiseta Infinity Preta</h4>
+                    <p>R$ 35,39</p>
+                    <span>★ 4,79</span>
+                </div>
+
+                <div class="related-card">
+                    <img src="img/camisa-branca.jfif">
+                    <h4>Camiseta Infinity Branca</h4>
+                    <p>R$ 35,39</p>
+                    <span>★ 4,60</span>
+                </div>
+
+                <div class="related-card">
+                    <img src="img/camiseta-azul.png">
+                    <h4>Camiseta Infinity Azul</h4>
+                    <p>R$ 45,99</p>
+                    <span>★ 4,79</span>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <div id="toast" role="status" aria-live="polite">Produto adicionado ao carrinho!</div>
+
+    <script src="produto.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>

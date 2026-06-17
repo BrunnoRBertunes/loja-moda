@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido - INFINITY</title>
+
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <main class="container" id="conteudo-principal" tabindex="-1">
+        <header class="checkout-header">
+            <a href="carrinho.html" aria-label="Voltar para o carrinho">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </a>
+
+            <div>
+                <h1>Finalizar pedido</h1>
+                <p>Revise seus dados antes de confirmar</p>
+            </div>
+
+            <img src="img/logo.png" alt="Infinite">
+        </header>
+
+        <section class="checkout-steps" aria-label="Etapas da compra">
+            <span class="step active">Carrinho</span>
+            <span class="step active">Entrega</span>
+            <span class="step">Pagamento</span>
+        </section>
+
+        <form id="checkoutForm">
+            <section class="checkout-section" aria-labelledby="delivery-title">
+                <h2 id="delivery-title">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    Entrega
+                </h2>
+
+                <div class="field-grid">
+                    <label>
+                        Nome completo
+                        <input type="text" id="customerName" autocomplete="name" required>
+                    </label>
+
+                    <label>
+                        E-mail
+                        <input type="email" id="customerEmail" autocomplete="email" required>
+                    </label>
+
+                    <label>
+                        Telefone
+                        <input type="tel" id="customerPhone" autocomplete="tel" required>
+                    </label>
+
+                    <label>
+                        CEP
+                        <input type="text" id="customerZip" inputmode="numeric" autocomplete="postal-code" required>
+                    </label>
+
+                    <label class="full-field">
+                        Endereço
+                        <input type="text" id="customerAddress" autocomplete="street-address" required>
+                    </label>
+
+                    <label>
+                        Número
+                        <input type="text" id="customerNumber" autocomplete="address-line2" required>
+                    </label>
+
+                    <label>
+                        Complemento
+                        <input type="text" id="customerComplement" autocomplete="address-line3">
+                    </label>
+                </div>
+            </section>
+
+            <section class="checkout-section" aria-labelledby="payment-title">
+                <h2 id="payment-title">
+                    <i class="fa-regular fa-credit-card" aria-hidden="true"></i>
+                    Pagamento
+                </h2>
+
+                <div class="payment-options" role="radiogroup" aria-labelledby="payment-title">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="Pix" checked>
+                        <span>
+                            <strong>Pix</strong>
+                            <small>Aprovação imediata</small>
+                        </span>
+                    </label>
+
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="Cartão de crédito">
+                        <span>
+                            <strong>Cartão de crédito</strong>
+                            <small>Parcelamento em até 3x</small>
+                        </span>
+                    </label>
+
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="Boleto">
+                        <span>
+                            <strong>Boleto</strong>
+                            <small>Vencimento em 2 dias úteis</small>
+                        </span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="checkout-section" aria-labelledby="summary-title">
+                <h2 id="summary-title">
+                    <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                    Resumo
+                </h2>
+
+                <div id="checkoutItems" class="checkout-items" aria-live="polite"></div>
+
+                <div class="totals">
+                    <div>
+                        <span>Produtos</span>
+                        <strong id="productsTotal">R$ 0,00</strong>
+                    </div>
+
+                    <div>
+                        <span>Frete</span>
+                        <strong id="shippingTotal">R$ 0,00</strong>
+                    </div>
+
+                    <div class="grand-total">
+                        <span>Total</span>
+                        <strong id="orderTotal">R$ 0,00</strong>
+                    </div>
+                </div>
+            </section>
+
+            <p id="checkoutMessage" class="checkout-message" role="alert" aria-live="assertive"></p>
+
+            <button class="confirm-order-btn" type="submit">
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                Confirmar pedido
+            </button>
+        </form>
+
+        <section class="success-panel" id="successPanel" tabindex="-1" aria-live="polite" hidden>
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+            <h2>Pedido confirmado</h2>
+            <p id="successText"></p>
+            <a href="main.html" class="continue-btn">Continuar comprando</a>
+        </section>
+    </main>
+
+    <script src="checkout.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>
